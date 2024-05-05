@@ -92,7 +92,7 @@ scene.add(overlay)
  * Models
  */
 const dracoLoader = new DRACOLoader(loadingManager)
-dracoLoader.setDecoderPath('/dist/static/draco/')
+dracoLoader.setDecoderPath('/static/draco/')
 
 const gltfLoader = new GLTFLoader(loadingManager)
 gltfLoader.setDRACOLoader(dracoLoader)
@@ -100,7 +100,7 @@ gltfLoader.setDRACOLoader(dracoLoader)
 let mixer = null
 
 gltfLoader.load(
-    '/dist/static/models/FishingRod.glb',
+    '/static/models/FishingRod.glb',
     (gltf) =>
     {   
         const model = gltf.scene;
